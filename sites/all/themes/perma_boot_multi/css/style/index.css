@@ -1,0 +1,721 @@
+/** Perma Boot Multi (scotland, wales, etc...)
+ * This file should get overwritten if Method 1 is used. If Method 2 is chosen,
+ * remove this comment and start adding your styles to this file.
+ */
+
+
+/* tweak the topnavlinks on KB site */
+body.domain-knowledgebase-permaculture-org-uk #block-block-52 {
+    top:-20px;
+}
+
+/* force font color in main menu for wales and scotland to be white */
+body.domain-scotland-permaculture-org-uk .navbar-default .navbar-nav>li>a,
+body.domain-wales-permaculture-org-uk .navbar-default .navbar-nav>li>a {
+    color: #FFFFFF;
+}
+
+body { font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    display:block;clear:both; background-color: #FFFFFF !important; }
+
+h1, h2, h3, h4 {
+font-family: "Raleway";
+  font-weight: 700;
+  color: #656565;
+}
+
+h5 {
+  font-family: "Raleway";
+  font-weight: 200;
+  color: #656565;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  color: #424242;
+}
+
+/* unvisited link */
+a:link {
+  color: #8C4054;
+  text-decoration: underline;
+}
+
+li a:link {
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: #477C90 ;
+}
+
+/* mouse over link */
+a:hover {
+  background-color: ;
+  color: #99bc44;
+}
+
+/* selected link */
+a:active {
+  color: #99bc44;
+}
+
+/* hide the buttons at the top when logged in or anon */
+body.logged-in div.newTopNav .hideforauthenticated {
+    display: none;
+}
+body.not-logged-in div.newTopNav .hideforanon {
+    display: none;
+}
+body.logged-in div.newTopNav {
+    text-align:right;
+}
+body.role-current-member div.newTopNav .hideformembers {
+    display: none;
+}
+.view-id-ethics_vocabulary td.ethicsImage {
+    width:20%;
+}
+
+/* Hide the "Create New Account" tab on login and password reset page (Need to join to create account) */
+body.not-logged-in  ul.tabs--primary>li:first-child {
+    display:none;
+}
+
+
+/* CiviCRM Contribution page poverrides */
+
+.crm-container fieldset legend {
+    font-family: Raleway !important;
+    font-size: 1.2em !important;
+    font-weight: bold !important;
+   
+}
+div.crm-container fieldset label {
+ line-height:1.3 !important;
+}
+
+#crm-container.crm-public .calc-value, #crm-container.crm-public .content, #crm-container.crm-public .label, #crm-container.crm-public .price-field-amount {
+    padding-top: 6px;
+    font-size: 18px;
+}
+.crm-container .description {
+    margin-bottom: 1em;
+}
+.crm-container a, .crm-container a:link {
+     color: #8C4054;
+  text-decoration: underline;
+}
+.crm-container a:visited {
+    color: #477C90;
+}
+.crm-container a:hover {
+    color: #99bc44;
+}
+.crm-container .help, .crm-container #help {
+    font-size:unset;
+}
+
+#printer-friendly {
+    display:none;
+}
+
+img {width:100%; height:auto;}
+/* Size Images Reset */
+.image-reset-width,
+.messages > img,
+.CRM_Contribute_Form_Contribution_Main img
+{width:auto;}
+
+.main-container {margin-top: -40px;background-color:#fff;padding-top:0px;padding-bottom:20px;padding-left: 30px;padding-right: 30px;}
+.clear{clear:both;display:inline-block;width:100%;}
+.bold, .bold a{font-weight: bold;color:#696969;}
+.form-horizontal .form-group {margin:0;}
+ul.action-links, .node-organisation > .submitted,  .region-content > div> .easy-breadcrumb {display:none;}
+.admin-views-view .form-item-operation, .views-reset-button, #block-system-main >h2 {margin-left:20px;}
+.li-spaced {
+	margin:10px 0;
+}
+
+/* Add To live*/
+.group-right > .field {margin-top:5px;}
+.panel-2col-stacked.clearfix.panel-display>div, .panel-pane,.ds-2col-stacked > div {display: inline-block;}
+iframe.youtube-video {width:100%; height:25em;margin-top: 23px;}
+
+/* Table */
+th.field-label > label{margin-left:15px;}
+table{margin-top:20px;}
+thead {background-color:#fff5cb;}
+.table > thead > tr > td.active, .table > tbody > tr > td.active, .table > tfoot > tr > td.active, .table > thead > tr > th.active, .table > tbody > tr > th.active, .table > tfoot > tr > th.active, .table > thead > tr.active > td, .table > tbody > tr.active > td, .table > tfoot > tr.active > td, .table > thead > tr.active > th, .table > tbody > tr.active > th, .table > tfoot > tr.active > th {background-color:#fff9e0;}
+
+/* Padding Correction */
+.tabbable,  .form-actions, .profile, form#user-login, form#user-pass, #node-admin-content, .node-type-list, #user-profile-form, #contact-site-form, #edit-group-group, #site-map, .view-display-id-system_1, .progress-wrapper, #socialmedia-admin-profiles-form, #contact-personal-form, #edit-og-group-ref, #edit-severity-wrapper, .view-empty, form.search-form {padding:15px;}
+
+.group-left, .group-right {display:inline-block;}
+
+/* Verticle Tabs */
+#block-menu-menu-vertical-links ul.menu >li >a {
+    padding-top: 0px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+}
+#vtab { cursor: pointer;display: block; overflow: hidden; position: fixed;left:-197px;top: 50%; height: 50px; width: 400px;  text-decoration: none !important; z-index: 9999;transform: rotate(90deg) scale(1) skew(1deg) translate(10px);-webkit-transform: rotate(90deg) scale(1) skew(1deg) translate(10px);-moz-transform: rotate(90deg) scale(1) skew(1deg) translate(10px);-o-transform: rotate(90deg) scale(1) skew(1deg) translate(10px);-ms-transform: rotate(90deg) scale(1) skew(1deg) translate(10px);}
+#block-menu-menu-vertical-links > ul.menu >li { float:left;background: #5d5d5d;margin-right:20px; ;border: solid 1px #ccc;}
+#block-menu-menu-vertical-links > ul.menu >li >a {letter-spacing: 1px;font-size:16px;font-weight: 700;color:#eee;}
+#block-menu-menu-vertical-links > ul.menu >li >a:hover{background:#747474;}
+
+/* Corrections / Fix */
+.thumbnail >div> blockquote.image-field-caption {display:none;}
+#aggregator {padding:0 15px;width:66.66666666666666%; display:inline-block;}
+.admin-views-view .views-exposed-form .form-text {width:100%;}
+.active > img, img.file-icon, a.feed-link > img, a.feed-link, .change-layout-display > img,td > a > img, .ical-icon >img, .iCal_links-section img {width:auto;}
+.field-type-image> img , .feed-icon > img{width:auto;max-width: 100%;}
+.panels-flexible-region-bootstrap_basic_page-right{display:inline-block;}
+.location .form-item input, .location .form-item {min-width:200px;max-width:60%;}
+.media-thumbnail > img {width:100px;}
+a.button {background:#f1f1f1; border:1px solid #e0e0e0;padding:7px;margin-right:10px; border-radius: 4px;}
+a.gtflag >img {width:20px;}
+
+/* Text / Heading Styles
+border-bottom: dotted 1px #ccc;padding-bottom:10px;margin-bottom:10px;
+*/
+h1 {font-size:30px;}
+h2 {font-size:26px; }
+h3 {font-size:22px;}
+h4 {font-size:18px;}
+
+.field-type-text-with-summary  h3 {margin:0 0 5px 0;line-height: 1.4em;}
+
+.field-type-text-with-summary img {padding:10px;}
+a:hover{text-decoration: underline;}
+
+/* Correct CIVICRM Pages */
+.page-civicrm > .page > .main-container > .row{
+    margin-right: 0;
+    margin-left: 0;
+}
+#crm-container td {
+    white-space: normal !important;
+}
+
+.crm-section > .label {
+    color:black;
+    width:20%;
+    display: inline-block;
+    margin-right:15px;
+    white-space: normal;
+}
+
+.crm-container .crm-section .label {
+    float: left;
+    width:25%;
+    text-align: right;
+}
+.page-civicrm > .region  > #admin-menu {display:none;}
+
+.crm-container .crm-section .content {
+    display: inline-block;
+    margin-left:5px;
+}
+
+
+/* Header */
+.navbar .logo {max-width:100%;}
+header {}
+.navbar-default {background-color:#fff; border: 0px solid #fff;}
+.navbar{margin-bottom:0px;}
+
+ul.navbar-nav {width:100%;border-radius: 4px;clear:both;margin:10px 0;padding:0 3px;}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus{color:#fff; }
+
+.navbar-default .navbar-nav>.active>a {color#fff;}
+.navbar-default .navbar-nav> li >a {/* color mode */}
+
+.unpad {padding: 0;}
+ul.secondary {margin:0 10px;padding-right:20px;float:right;margin-right:0px;border-radius: 0px;border-bottom-left-radius: 4px;border-bottom-right-radius: 4px;}
+.secondary >li {float:right;}
+.secondary >li >a {padding:10px;font-size: 13px;}
+
+.navbar-default .navbar-toggle {}
+.form-search {display:inline-block;max-width: 400px;float:right;}
+
+/* Breacrumb */
+ #block-easy-breadcrumb-easy-breadcrumb{padding:0 15px;}
+.easy-breadcrumb {
+padding: 8px 15px;
+list-style: none;
+background-color: #f5f5f5;
+border-radius: 4px;}
+.easy-breadcrumb_segment {margin-right:7px;}
+.easy-breadcrumb_segment-separator{color:#ccc;margin-right:7px;}
+
+/* Banner 	*/
+#site-banner > a > img{width:10%;margin:5px 0;}
+#per-banner {width:50%;}
+
+/* Panel .panels-flexible-row-inside > div {display:inline-block;width:100%;}
+*/
+.pane-principles-images-panel-pane-1 > h2.pane-title{padding:0 0 0 15px}
+.panels-flexible-region-bootstrap_basic_page-top-inside > div >h2.pane-title{padding:0 0 0 15px;margin:0px;}
+/*.field-name-body > h1, .field-name-field-translation h1 {margin-top: 0;}
+.field-name-field-translation {margin-top: 10px;}
+*/
+/* Footer */
+footer{text-align:center;}
+.footer{margin-top:0px;}
+.region-footer {display:inline-block;}
+.region-footer ul {clear:both;margin-left:0; padding:0;}
+.region-footer li {list-style-type:none; margin:7px 5px;display:inline;}
+
+/*	Admin Menu */
+#block-menu-menu-admins > ul {background:#f9f9f9;margin:10px 15px;}
+#block-menu-menu-admins > ul >li {float:left;}
+#block-menu-menu-admins > ul >li.active {background: #eee;}
+.page-media-browser #block-menu-menu-admins {display: none;}
+
+/* Articles */
+.field-name-body {margin:10px 0;}
+.field-type-taxonomy-term-reference {margin:10px 0;background: #F7ECCF;padding:10px;border-radius: 4px;}
+.field-type-taxonomy-term-reference >.field-items >.field-item {display:inline-block;margin-right:20px;font-weight: bold;}
+
+.pane-widgets-s-socialmedia-profile-buttons{padding-bottom: 10px;}
+
+/* Twitter */
+#pane-tweets {padding-top:5px;padding-bottom: 5px; margin-top:10px; margin-bottom: 5px;}
+#pane-tweets > h2{margin-top:5px;}
+#pane-tweets a { color: #a84d65; }
+#twitter-pane {display:inline-block; padding:15px;}
+.tweet-text {float:left;width:100%;margin-top:10px;}
+.tweet-time{font-size: 0.8em;font-style: italic;margin-top:5px 0;display:inline-block;}
+
+.twitter-view {margin:0;padding:8px 0;display:inline-block; line-height: 1.5em;}
+.twitter-view > img {width:48px;height: 48px;}
+
+.panels-ipe-portlet-wrapper {display:inline-block;}
+/* Social Media */
+#widgets-element-socialmedia_share-default {}
+.widgets-element{margin:10px 10px 0 0;}
+
+/* Mollom*/
+.form-item-mollom-captcha {max-width:50%;}
+
+/* Calendar 	*/
+.view-event-event-cal > .view-header > .date-nav-wrapper > .date-nav {margin:0; padding:0;}
+.view-event-event-cal > .view-header > .date-nav-wrapper >.item-list > ul.pager {margin:14px 0;width:100%;}
+.view-event-event-cal > .view-header > .date-nav-wrapper >.item-list > ul.pager > li {position:relative;width:50%;right:0;left:0;padding:0;margin:0 auto;display:block;float:left;}
+.view-event-event-cal > .view-header > .date-nav-wrapper >.item-list > ul.pager > li  >a {margin:2px 7px;padding:auto;width:18px;height:30px;}
+.view-event-event-cal > .view-header > .date-nav-wrapper >.item-list > ul.pager > li.date-prev  >a {float:left;display:inline-table;}
+.view-event-event-cal > .view-header > .date-nav-wrapper >.item-list > ul.pager > li.date-next  >a {display:inline-table;}
+.calendar-calendar th.days {border: 1px solid #eee;}
+.calendar-calendar .month-view .full td.multi-day div.monthview, .calendar-calendar .week-view .full td.multi-day div.weekview, .calendar-calendar .day-view .full td.multi-day div.dayview {height:80px;margin:10px;padding:10px;font-size:10px;}
+.calendar-calendar .day-view .full td.multi-day div.dayview {font-size:12px;}
+.calendar-calendar .day-view .full td .inner div.calendar div a {color:#fff;text-decoration:underline;}
+.calendar-calendar td.calendar-agenda-items{border:0px;}
+.calendar-calendar td {text-align: center;}
+.calendar-calendar td .inner div, .calendar-calendar td .inner div a{background:inherit;}
+.calendar-calendar td {border:solid 1px #F4F4F4;}
+.calendar-calendar td.empty {border:none;}
+.calendar-calendar td span.date-display-single, .calendar-calendar td span.date-display-start, .calendar-calendar td span.date-display-end, .calendar-calendar td span.date-display-separator, .calendar-calendar td a {color:#f1f1f1;}
+.calendar-calendar .day-view .full td .inner div.calendar div, .calendar-calendar .day-view .full td .inner div.calendar div a {font-size: 12px;}
+
+
+/* View Styles */
+
+#views-bootstrap-thumbnail-1 > div {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.blog-image {padding-top: 15px;}
+.view-activity-map-courses-events {padding-bottom: 10px;}
+.views-row-odd + .blog-item {padding-right:15px}
+.blog-item {width:50%;height:400px;float:right;}
+.blog-image >div > div {overflow:hidden;height:100px;}
+.blog-image >div > div > a {position:relative;bottom: 20px;}
+.view-date-field {font-style:italic;color:#aaa;margin-left:5px;}
+.view-content > div> .views-field-body >.view-teaser-blog {border-top:1px dotted #ccc; width:100%; display:block; height:160px; overflow: hidden;margin:5px 0;padding-top: 5px; background-image: url('../../../perma_boot/images/grad-out/index.png'); background-position: bottom; background-repeat: repeat-x; background-attachment: fixed;}
+
+
+/* Bootstrap Carousel */
+.carousel-control {width:5%;}
+.carousel-control.right, .carousel-control.left {display:none;}
+ol.carousel-indicators > li {font-size:19px;padding:3px; background-color:#b5b5b5;border:solid 1px #e2e2e2;}
+ol.carousel-indicators {margin-top:30px;}
+
+/* Comments */
+.comment {margin: 10px 0;}
+.indented {margin-left:20px;}
+.field-name-comment-body > .field-items, .field-name-comment-body{width:100%;padding:10px;background-color:#F9FAF8; margin: 7px 0px; border: 1px solid transparent; border-radius: 4px;color:#468847;}
+.comment > div  >.field-name-post-date, .field-name-post-date {font-style:italic; font-size:12px;color:#8B8B8B;float:right;}
+.comment > div > list-inline, .comment >.links{float:right;font-size:12px;color:#8B8B8B;margin-left:20px;}
+a.username {font-weight: bold;color:#6c6c6c;}
+h2.comment-form {display:none;}
+form.comment-form {margin-top:20px;}
+
+/* XXXXS Device Width
+*/
+@media (max-width: 400px) {
+    h1 {
+        font-size: 1.4em;
+    }
+    h2 {
+        font-size: 1.2em;
+    }
+    h3, h4, h5 {
+        font-size: 1em;
+    }
+    
+    p {
+        font-size: 0.8em;
+    }
+    
+}
+
+/* XS Device Width
+*/
+@media (max-width: 768px) {
+    ul.navbar-nav {padding:5px;}
+        /* xsNav */
+	.logo > img { margin:8px 0; width:250px; max-height:auto;}
+    #vtab {display: none;}
+
+	.navbar-default .navbar-toggle {margin:35px;}
+	.navbar-default {background-color:#fff; border-bottom: 1px solid #f2f2f2;}
+	
+	.navbar-default .navbar-nav> li.first {margin-left:0px;}
+
+	ul.secondary {margin:0 0;padding-right:0;border:solid 0px #8EA220}
+	ul.secondary >li {float:left;}
+	ul.secondary >li.first>a{;margin-left:10px;}
+	
+	/* Banner */
+	.rteright{display:none;}
+	#site-banner > a > img{display:none;}
+	#per-banner {display:none;}
+    
+    /* Views */
+    .blog-item {padding-right:0px;height:auto;float:none; margin:20px 0;}
+    .blog-feed-page {margin-bottom:15px;}
+    .blog-item > .blog-image,.blog-feed-page > .blog-image {border-top: solid 1px #FFF1D3;padding-top: 15px;}
+    .view-content > div> .views-field-body >.view-teaser-blog {height:auto;}
+    
+    /* Panel
+    .panels-flexible-region-bootstrap_basic_page-center {width:100%;}
+    .panels-flexible-region-bootstrap_basic_page-right {width:100%;float:right;} */
+    
+    #gmap-gmapwales-gmap0{height:300px;}
+	#aggregator {padding:0 15px;width:100%; display:inline-block;}
+
+	.node-type-page.domain-wales-permaculture-org-uk div.group-left,
+.page-home-wales.domain-wales-permaculture-org-uk div.group-left { width: 100%; }
+
+.node-type-page.domain-wales-permaculture-org-uk div.group-right,
+.page-home-wales.domain-wales-permaculture-org-uk div.group-right { width: 100%; }
+
+/*CiviCRM mobile form tweaks */
+    
+    div.crm-section .label,  div.crm-section .content {
+        max-width:50%;
+    }
+    div.crm-section.helprow-pre div.content {
+        max-width: 100%;
+    }
+    
+/* Hide the topNav buttons join, donate, etc.. and tweak the breadcrumb positon */
+    #block-block-52 {
+        display:none !important;
+    }
+    ol.breadcrumb {
+        margin-top: 20px;
+    }
+}
+
+/* SM Device Width
+*/
+@media (min-width: 768px) {
+    /* Banner 	*/
+    #site-banner > a > img{width:15%;margin:5px 0;}
+    #per-banner {width:60%;}
+    
+    #gmap-gmapwales-gmap0{height:450px;}
+    .navbar-header {
+        min-height: 130px;
+        min-width: 200%;
+    }
+
+}
+
+/* MD Device Width
+*/
+@media (min-width: 992px) {
+    #gmap-gmapwales-gmap0{height:600px;}
+
+    #pane-tweets { width: 32%; margin-right: 15px; }
+
+    .navbar-header {
+        min-width: 500px;
+    }
+}
+
+/* Reset
+*/
+.panels-flexible-bootstrap_70_30 .panels-flexible-region{padding:inherit;}
+.panels-flexible-bootstrap_70_30 .panels-flexible-region-inside{padding-right:inherit;padding-left:inherit;}
+.panels-flexible-bootstrap_70_30 .panels-flexible-region-inside-first{padding-left:inherit;}
+.panels-flexible-bootstrap_70_30 .panels-flexible-region-inside-last{padding-right:inherit;}
+.panels-flexible-bootstrap_70_30 .panels-flexible-column{padding:inherit;}
+.panels-flexible-bootstrap_70_30 .panels-flexible-column-inside{padding-right:inherit;padding-left:inherit;}
+.panels-flexible-bootstrap_70_30 .panels-flexible-column-inside-first{padding-left:inherit;}
+.panels-flexible-bootstrap_70_30 .panels-flexible-column-inside-last{padding-right:inherit;}
+.panels-flexible-bootstrap_70_30 .panels-flexible-row{padding:inherit;margin:inherit;}
+.panels-flexible-bootstrap_70_30 .panels-flexible-row-last{padding-bottom:inherit;}
+.panels-flexible-column-bootstrap_70_30-4{position:inherit;float:inherit;background-color:inherit;width:inherit;}
+.panels-flexible-bootstrap_70_30-inside{padding-left:inherit;margin-left:inherit;padding-right:inherit;}* html
+.panels-flexible-bootstrap_70_30-inside{left:inherit;}
+.panels-flexible-bootstrap_70_30{width:inherit;}
+.panels-flexible-region-bootstrap_70_30-top{float:inherit;width:inherit;}
+.panels-flexible-row-bootstrap_70_30-6-inside{padding-right:inherit;}
+.panels-flexible-region-bootstrap_70_30-left_col{position:inherit;float:inherit;background-color:inherit;width:inherit;}
+.panels-flexible-region-bootstrap_70_30-right_col{position:inherit;float:inherit;background-color:inherit;width:inherit;}
+.panels-flexible-row-bootstrap_70_30-5-inside{padding-left:inherit;margin-left:inherit;padding-right:inherit;}* html
+.panels-flexible-row-bootstrap_70_30-5-inside{left:inherit;}
+.panels-flexible-region-bootstrap_70_30-bottom{float:inherit;width:inherit;}
+.panels-flexible-row-bootstrap_70_30-7-inside{padding-right:inherit;}
+
+
+.mollom-image-captcha img {
+    width:160px !important;
+}
+
+
+div.view-teaser-blog span {
+    height: 135px;
+}
+
+div.view-blog-articles h3 {
+    height: 25px;
+    line-height: 20px;
+    white-space: nowrap;
+    overflow:hidden !important;
+    text-overflow: ellipsis;
+}
+
+
+div.view-blog-articles ul.pagination {
+	padding-top: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* hide the noticeboard display suite block field menu for domain sites and set the width of left group to 100% */
+
+#block-menu-menu-noticeboard { display: none; }
+
+.node-type-page .group-left { width: 100%; }
+
+/* hide the Page Translation field by default, then show only on wales sites */
+.field-name-field-translation { display: none; }
+
+.node-type-page.domain-wales-permaculture-org-uk div.field-name-field-translation,
+.domain-wales-permaculture-org-uk div.field-name-field-translation,
+.page-home-wales.domain-wales-permaculture-org-uk div.field-name-field-translation { display: inherit; }
+
+.node-type-page.domain-wales-permaculture-org-uk div.group-left,
+.page-home-wales.domain-wales-permaculture-org-uk div.group-left { width: 50%; }
+
+.node-type-page.domain-wales-permaculture-org-uk div.group-right,
+.page-home-wales.domain-wales-permaculture-org-uk div.group-right { width: 50%; }
+
+.node-type-page.domain-wales-permaculture-org-uk div.field-name-noticeboard-block-field,
+.page-home-wales.domain-wales-permaculture-org-uk div.field-name-noticeboard-block-field
+ { display: none; }
+
+ .event_footer_text-section img {
+    max-width: 52px;
+ }
+
+/* hide all the role badges by default. */
+.userrolehide { display: none; }
+
+
+/*removed the educator badge, just certified.
+.course-teacher-role-div49 {
+    display: block;
+}
+.course-teacher-role-div49 img {
+    height: 100px;
+    content: '';
+    background: url("/sites/default/files/badge-49.png");
+     background-size: 80px 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+        display: block;
+    max-height: 100px;
+    max-width: 100px;
+ }
+ */
+ 
+/* only if they have role 48 then show 49 and set it's src. no parent or prev sibling in css so done in /js/badges.js in theme. this just sets the icon image and size but it stays hidden.*/
+.course-teacher-role-div50 {
+    background-repeat: no-repeat;
+    content: '';
+    background: url("../../../../../default/files/badge-50/index.html");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 100px;
+    height: 50px;
+}
+
+.badges {
+    text-align: center;
+}
+
+/* hide the Wales translation field by default. Multi theme will show it for just wales. */
+.field-name-field-translation { display: none; }
+
+
+/* Wales tweets pane has grey background */
+
+#pane-tweets { background-color: #efefef; }
+
+/* Scotland fixes */
+
+/*fix padding below search box */
+.region-banner #edit-actions { display: none; }
+
+.page-practical-solutions .field-name-field-pracsol-image .image-field-caption {display: none;}
+
+/* set field-labels to h3 format for the KB content types. */
+
+.domain-knowledgebase-permaculture-org-uk .field-label {
+	font-size: 22px;
+	margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.weblink-summary-view > p { margin-left: 20px; }
+
+/* resolve pabel editor disabling breadscrumbs and node tabs */
+
+ol.breadcrumb, ul.tabs--primary {
+    position: relative;
+    z-index: 100;
+}
+
+/* hide publishing options for all domains, other than Wales and Scotland. */
+
+.page-node-add-course #edit-domains > div.form-item, .page-node-add-event #edit-domains > div.form-item, .form-item-domain-source  {
+    display: none;
+}
+.node-type-course #edit-domains > div.form-item, .node-type-event #edit-domains > div.form-item, .form-item-domain-source  {
+    display: none;
+}
+
+/* show just Wales (ID=2) and Scotland (ID=9) the default perma association is ticked anyway */
+.role-current-member #edit-domains div.form-item.form-item-domains-2,
+.role-current-member #edit-domains div.form-item.form-item-domains-9 {
+    display: block;
+}
+
+/* show them all for admins */
+
+.role-developer #edit-domains > div.form-item, .role-developer .form-item-domain-source,
+.role-advanced-admin #edit-domains > div.form-item, .role-advanced-admin .form-item-domain-source {
+    display: block;
+}
+
+/* New CSS for rebrand 2018 */
+
+#block-block-52 {
+    display: flow-root;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+div.newTopNav {
+        margin: 20px;
+        margin-bottom: 5px;
+}
+
+.newTopNav a {
+    padding: 5px;
+}
+
+ul.navbar-nav {
+    max-width: 100%;
+    position: relative;
+    top: -40px;
+    z-index: 500;
+}
+
+.newTopSiteLinks a {
+    max-width: 200px;
+    float: right;
+    position: relative;
+    
+}
+
+.btn-learn {
+    background: #C0A88C;
+    border-color: #C0A88C;
+}
+
+.btn-join {
+    background: #46818F;
+    border-color: #46818F;
+}
+
+.btn-donate {
+    background: #AA4E66;
+    border-color: #AA4E66;
+}
+
+.btn-login {
+    background: #99BC44;
+    border-color: #99BC44;
+}
+
+.btn-learn:hover {
+    background: #a4825b;
+    border-color: #a4825b;
+}
+
+.btn-join:hover {
+    background: #325c67;
+    border-color: #325c67;
+}
+
+.btn-donate:hover {
+    background: #7a384a;
+    border-color: #7a384a;
+}
+
+.btn-login:hover {
+    background: #6a832f;
+    border-color: #6a832f;
+}
+
+.btn {
+    font-weight:600;
+    text-decoration:none;
+}
+
+.btn a:link {
+    color: #FFFFFF;
+    font-weight:600;
+}
+
+.btn a:hover {
+    color: #FFFFFF;
+}
+
+.btn a:visited {
+    color: #FFFFFF;
+}
